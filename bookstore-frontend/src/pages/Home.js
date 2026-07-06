@@ -16,7 +16,7 @@ function Home() {
 
   const fetchBooks = async () => {
     try {
-      const response = await fetch("http://localhost:5000/books");
+      const response = await fetch("https://bookstore-kaaf.onrender.com/books");
       const data = await response.json();
       setBooks(data);
     } catch (error) {
@@ -31,7 +31,7 @@ function Home() {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/books", {
+      const response = await fetch ("https://bookstore-kaaf.onrender.com/books", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ function Home() {
 
   const deleteBook = async (id) => {
     try {
-      await fetch(`http://localhost:5000/books/${id}`, {
+      await await fetch(`https://bookstore-kaaf.onrender.com/books/${id}`, {
         method: "DELETE",
       });
 

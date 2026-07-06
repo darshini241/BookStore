@@ -7,7 +7,7 @@ function Signup() {
   const [password, setPassword] = useState("");
 
   const register = async () => {
-    const res = await fetch("http://localhost:5000/register", {
+    const res = await fetch("https://bookstore-kaaf.onrender.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
